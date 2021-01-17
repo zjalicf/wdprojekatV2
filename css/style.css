@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+header {
+    background: #4a428d;
+    color:white;
+    position: sticky;
+}
+
+li {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    flex: 1 1 10px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav a {
+    margin: 0 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    min-width: 100vw;
+    background: #4a428d;
+    color:white;
+    position: sticky;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+i {
+    cursor: pointer;
+}
+
+.ime-knjige-korpa {
+    word-wrap: break-word;
+    margin-left: 20px;
+}
+
+.footer ul {
+    margin: 0;
+    display: flex;
+    flex: 1 1 10px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 10px;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+}
+
+#logo:hover {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 115vh;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.knjiga {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    height: 4px;
+    background: orange;
+}
+
+.total {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.autor {
+    color: gray;
+    font-size: 70%;
+}
+
+.knjiga img {
+    height: 300px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color:#f2e3dd;
+    transform: scale(1.5)
+}
+
+.knjiga > a:hover {
+    text-decoration: none;
+    color:black;
+}
+
+.flex-container3 {
+    display: flex;
+    min-height: 84vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slika-knjige {
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slika-korisnika > img {
+    margin-right: 100px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.flex-container2 {
+    display: flex;
+    min-height: 83vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opis-knjige {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.detalji-korisnika {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.nazad {
+    margin-top: 23px;
+    font-size: 20px;
+    width: 80px;
+    padding: 5px 0;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    border: none;
+}
+
+.temp1 {
+    color:#4a428d;
+}
+
+.cena {
+    margin-top: 30px;
+    font-size: 200%;
+}
+
+.edit-button {
+    margin-top: 23px;
+    font-size: 20px;
+    width: 80px;
+    padding: 5px 0;
+    background-color:#f0ad4e;
+    border-radius: 5px;
+    border: none;
+}
+
+.kupi {
+    margin-top: 15px;
+    font-size: 20px;
+    width: 80px;
+    color: white;
+    padding: 5px 0;
+    background-color: rgb(22, 88, 61);
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-poruka {
+    font-size: 26px;
+    padding-bottom: 20px;
+    color: #d9534f;
+}
+
+.submit-button {
+    padding: 6px;
+}
+
+form {
+    text-align: center;
+}
+
+.password {
+    margin-left: 8px;
+}
+
+.git-icon {
+    width: 22px;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.git-ime {
+    margin: 0;
+    flex: 2 1 10px;
+    font-size: 20px;
+}
+
+.footer > a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-a {
+    display:flex;
+    flex-direction: row;
+}
+
+.email {
+    margin-left: 20px;
+}
+
+.reg-ime {
+    margin-left: 30px;
+}
+
+.flex-container4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-email {
+    margin-left: 40px;
+}
+
+.login-pass {
+    margin-left: 25px;
+}
+
+.admin-left {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    border-right: 2px solid rgb(211, 207, 207);
+    padding-right: 30px;
+}
+
+.admin-button {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: lightskyblue;
+}
+
+.admin-left > input {
+    padding: 5px;
+    background-color: rgb(204, 201, 201);
+    border: none;
+    border-radius: 5px;
+}
+
+.admin-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+}
+
+.user > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user {
+    flex-wrap: wrap;
+    margin: 15px 0;
+    display: flex;
+    padding: 20px;
+    min-width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    background:#f2e3dd;
+    border-radius: 5px;
+}
+
+.user button, 
+.user span {
+    width: 150px;
+}
+
+.admin-edit-button {
+    margin-top: 15px;
+    background-color:#f0ad4e;
+    padding: 4px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.admin-view-button {
+    background-color:lightskyblue;
+    padding: 2px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.admin-delete-button {
+    background-color:#d9534f;
+    padding: 2px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.q-korpa {
+    margin-right: 30px;
+    width: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 20%;
+    background-color: #4a428d;
+}
+
+.cena-knjige-korpa {
+    margin-right: 25px;
+}
+
+.p-opis {
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 70px;
+    padding: 10px;
+    background-color:#f2e3dd;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.korpa-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* stars */
+
+.stars {
+    display: flex;
+    align-items: flex-start;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 5px;
+  font-size: 26px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+label.star:hover { 
+  transform: rotate(-10deg) scale(1.3);
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+/* stars end */
+
+
+@media screen and (max-width: 932px) {
+    nav {
+      text-align: center;
+    }
+    .stars {
+        margin-right: 45px;
+    }
+
+    #logo {
+      padding: 10px;
+    }
+    .knjiga {
+        margin-bottom: 20px;
+    }
+    .slika-knjige {
+        margin-left: 100px;
+    }
+    .slika-korisnika > img {
+        width: 250px;
+        margin-left: 190px;
+    }
+    .opis-knjige {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .slika-knjige > img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .flex-container2 {
+        margin: 30px;
+    }
+    .admin-left {
+        display: none;
+    }
+    .user button, 
+    .user span {
+        margin-left: 90px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .user > img{
+        margin-left: 110px;
+        margin-bottom: 10px;
+    }
+    .edit-poruka {
+        text-align: center;
+    }
+    .kupi {
+        margin-left: 91px;
+        margin-bottom: 15px;
+    }
+    .p-opis{
+        margin: 10px;
+    }
+
+    .slika-korisnika img {
+        margin-right: 200px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .detalji-korisnika {
+        align-items: center;
+        text-align: center;
+    }
+
+    .reg-ime, .email, .password, .login-email, .login-pass {
+        margin: 0;
+        padding: 0;
+    }
+
+    .q-korpa, .cena-knjige-korpa, .ime-knjige-korpa {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1716px) {
+    .knjiga {
+        margin-bottom: 400px;
+    }
+}

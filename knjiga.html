@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pattaya|Poppins:400,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/knjiga.js"></script>
+  <script src="./js/cart.js" async></script>
+  <script src="./js/validacijaRegistracije.js"></script>
+  <script src="./js/validacijaLogin.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/rating.js"></script>
+  <title>Knjizara</title>
+</head>
+
+<body>
+  <div class="progress"></div>
+  <header>
+    <nav>
+      <a href="./index.html" id="logo">Knjizara</a>
+      <ul>
+        <li><a href="./index.html">Knjige</a></li>
+        <li><a href="./admin.html">Admin</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Registracija</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal2">Login</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal3">Korpa</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="knjiga" class="flex-container2">
+      <div class="slika-knjige" id="slika-knjige"></div>
+      <div>      
+      <div class="opis-knjige" id="opis-knjige"></div>
+      <button class="kupi">kupi</button>
+      </div>
+      <p class="p-opis" id="p-opis"></p>
+  </div>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Registracija</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <label for="fname">Ime:</label>
+            <input type="text" id="fname" name="fname" class="reg-ime"><br><br>
+            <label for="lname">Prezime:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="remail" name="email" class="email"><br><br>
+            <label for="password">Lozinka:</label>
+            <input type="password" id="rpassword" name="password" class="password"><br><br>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Zatvori</button>
+          <button type="button" class="btn btn-success" onclick="validacijaRegistracije()" id="posalji">Posalji</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <label for="email"></label>Email:</label>
+            <input type="text" id="lemail" name="email" class="login-email"><br><br>
+            <label for="password">Lozinka:</label>
+            <input type="password" id="lpassword" name="password" class="login-pass"><br><br>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Zatvori</button>
+          <button type="button" class="btn btn-success" onclick="validacijaLogin()" id="ulaz">Ulaz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Korpa</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div id="korpa" class="modal-body">
+        </div>
+
+        <div class="modal-footer">
+          <span class="total"></span>
+          <button type="button" class="btn btn-success" data-dismiss="modal" onclick="kupovina()">Kupovina</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <a href="https://github.com/zjalicf/wdprojekat" class="git-icon"><img src="./icons/github.svg" alt=""></a>
+      <a href="https://github.com/zjalicf/wdprojekat" class="git-ime">Filip Zjalic SR5/2020</a>
+      <ul>
+        <li><img src="./icons/instagram.svg" alt=""></li>
+        <li><img src="./icons/twitter.svg" alt=""></li>
+        <li><img src="./icons/youtube.svg" alt=""></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
