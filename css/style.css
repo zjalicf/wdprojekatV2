@@ -448,7 +448,7 @@ label.star:before {
       text-align: center;
     }
     .stars {
-        margin-right: 45px;
+        justify-content: center;
     }
 
     #logo {
@@ -474,6 +474,9 @@ label.star:before {
     }
     .flex-container2 {
         margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .admin-left {
         display: none;
@@ -492,7 +495,6 @@ label.star:before {
         text-align: center;
     }
     .kupi {
-        margin-left: 91px;
         margin-bottom: 15px;
     }
     .p-opis{
