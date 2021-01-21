@@ -1,7 +1,3 @@
-if (sessionStorage.getItem('knjiga')) {
-    osveziKorpu();
-}
-
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -26,43 +22,6 @@ function ready() {
         var button = addToCartButtons[i];
         button.addEventListener('click', addToCartClicked)
     }
-}
-
-function osveziKorpu() {
-    window.onload = function () {
-        var knjiga = JSON.parse(sessionStorage.getItem('knjiga'));
-        var korpa = document.getElementById('korpa');
-        var korpaBody = document.createElement('div');
-        korpaBody.setAttribute('class', 'korpa-body');
-        var slikaKnjige = document.createElement('img');
-        slikaKnjige.setAttribute('src', knjiga['img']);
-        slikaKnjige.style.width ='100px';
-        korpaBody.appendChild(slikaKnjige);
-        korpa.appendChild(korpaBody);
-        var imeKnjige = document.createElement('span');
-        imeKnjige.innerText = knjiga['ime'];
-        imeKnjige.setAttribute('class', 'ime-knjige-korpa');
-        korpaBody.appendChild(imeKnjige);
-
-        var kolicina = document.createElement('input');
-        kolicina.setAttribute('class', 'q-korpa');
-        kolicina.setAttribute('value', '1');
-        kolicina.setAttribute('type', 'number');
-        korpaBody.appendChild(kolicina);
-        korpa.appendChild(korpaBody);
-
-        var cena = document.createElement('span');
-        cena.innerText = knjiga['price'];
-        cena.setAttribute('class', 'cena-knjige-korpa');
-        korpaBody.appendChild(cena);
-
-        var remove = document.createElement('i');
-        remove.setAttribute('class', 'fa fa-times');
-        korpaBody.appendChild(remove);
-
-        korpa.getElementsByClassName('fa-times')[0].addEventListener('click', removeCartItem);
-        korpa.getElementsByClassName('q-korpa')[0].addEventListener('change', quantityChanged);
-    };
 }
 
 function kupovina() {
@@ -141,14 +100,6 @@ function addItemToCart(ime, price, img) {
     var remove = document.createElement('i');
     remove.setAttribute('class', 'fa fa-times');
     korpaBody.appendChild(remove);
-
-    const knjiga = {
-        img: img,
-        ime: ime,
-        price: price,
-    }
-    
-    sessionStorage.setItem('knjiga', JSON.stringify(knjiga));
     
     korpa.getElementsByClassName('fa-times')[0].addEventListener('click', removeCartItem);
     korpa.getElementsByClassName('q-korpa')[0].addEventListener('change', quantityChanged);
