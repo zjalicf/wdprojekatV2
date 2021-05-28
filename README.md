@@ -1,1 +1,1 @@
-https://wdprojekat.netlify.app/
+https://wdprojekatV2.netlify.app/
